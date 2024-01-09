@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".korea_Denchangstew2">
+
+    //toolbar
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00FFFFFF"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아보카도 비빔밥"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"/>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/my_toolbar"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape"
+        android:elevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="된장찌개"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                app:videoId="KUAv8VPnpFI"
+                app:autoPlay="true"
+                app:showYouTubeButton="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--띄어쓰기-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_moon"
+                    android:rotation="180" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    android:background="@color/underline"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/space0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="1. 애호박, 감자, 버섯, 청양고추, 양파, 대파를 준비하고 먹기 좋게 썬다"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="2. 냄비에 쌀뜨물 붓고 된장을 푼다. "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 보글보글 끓어오르면 딱딱한 감자부터 넣어 끓여준다"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 이어 다진 마늘, 고춧가루 그리고 텁텁함을 잡아줄 설탕도 함께 넣어 준다"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. 한소끔 끓이고 난 뒤  나머지 야채를 넣고 끓여준다."
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*(버섯, 애호박, 양파, 두부, 청양고추, 대파)"
+                android:textSize="10dp"
+                android:textColor="@color/gray"/>
+
+
+
+            <Button
+                android:id="@+id/adopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_bg"
+                android:clickable="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="요리 끝"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginBottom="60dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_corners"
+        app:cnb_unselectedColor="@color/black"
+        app:cnb_radius="8dp"
+        android:layout_margin="20dp"
+        android:elevation="8dp"
+        app:cnb_orientationMode="horizontal">
+    </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+
+</RelativeLayout>

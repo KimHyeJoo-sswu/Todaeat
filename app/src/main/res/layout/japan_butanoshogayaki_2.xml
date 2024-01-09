@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".japan_Butanoshogayaki2">
+
+    //toolbar
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00FFFFFF"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아보카도 비빔밥"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"/>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="390dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/my_toolbar"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape"
+        android:elevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/title_butanoshogayaki"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="부타노쇼가야끼"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                app:videoId="hrz2e3vWuDg"
+                app:autoPlay="true"
+                app:showYouTubeButton="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--띄어쓰기-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_moon"
+                    android:rotation="180" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    android:background="@color/underline"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/space0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[재료준비]"
+                android:textSize="10dp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="1. 돼지고기 뒷다리살을 손바닥 정도 크기로 자른다."
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="2. 파를 고명으로 올리고 싶은 만큼 송송 썰어준다."
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="3. 양배추는 한 줌 정도 되도록 얇게 채썰어준다."
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[양념장 만들기]"
+                android:textSize="10dp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="1. 그릇(볼)에 진간장 1숟가락, 맛술 1숟가락, 설탕 1숟가락, 다진생강 손톱크기만큼을 넣고 섞는다."
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="* 진간장, 맛술, 설탕 = 1:1:1의 비율로 넣기"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="* 맛술->미림이나 미향으로 대체 가능"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/maincolor"
+                android:text="* 생강 향이 더 나기를 원하면 생강을 좀 더 넣어도 됨"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[요리하기]"
+                android:textSize="10dp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/explain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 후라이팬에 식용유 1.5숟가락을 넣어 중간불에서 달궈준다."
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 후라이팬이 달궈지면 돼지고기 뒷다리살을 한 장씩 떼어서 넣는다."
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/space4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/explain5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 중간불에서 고기가 노릇해질때까지 굽는다."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 고기가 노릇해지면 양념장을 붓는다."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. 국물이 조금 남을 때까지 졸인다. (고기에 윤기가 나고 국물이 조금 남아있어야 함)"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. 고기와 썰어놓은 양배추를 접시에 담고 고기에 썰어놓은 대파를 뿌려주고 양배추에 마요네즈와 후추를 뿌린다."
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/adopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_bg"
+                android:clickable="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="요리 끝"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginBottom="60dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_corners"
+        app:cnb_unselectedColor="@color/black"
+        app:cnb_radius="8dp"
+        android:layout_margin="20dp"
+        android:elevation="8dp"
+        app:cnb_orientationMode="horizontal">
+    </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+
+
+
+</RelativeLayout>

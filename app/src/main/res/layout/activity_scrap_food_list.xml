@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:gravity="center"
+            app:backgroundTint="@color/black">
+        </Button>
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_home_24"
+            app:backgroundTint="@color/black">
+        </Button>
+
+        <EditText
+            android:id="@+id/searchScrap"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="15dp"
+            android:hint="검색할 레시피를 입력하세요"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/searchIcon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_search_24"
+            app:backgroundTint="@color/black">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/folderNameFromScrapPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="folder1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/scrapListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textFilterEnabled="true">
+    </ListView>
+</LinearLayout>

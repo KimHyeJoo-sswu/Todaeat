@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sns_marshmello_smore_dip">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.Todaeat">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/recipe_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/colorPrimary"/>
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="515dp"
+            android:layout_height="387dp"
+            android:background="@drawable/marshmellow_smoredip"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/Theme.Todaeat"
+            app:contentScrim="@color/maincolor"
+            app:expandedTitleTextAppearance="@style/Theme.Todaeat"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/marshmellow_smoredip"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:orientation="vertical">
+
+
+            <!--                   버튼 추가!!!-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="마쉬멜로우 스모어 딥"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/bookmark"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic__bookmark_before_click"
+                    />
+            </LinearLayout>
+
+            <!--                   증가 감소 버튼 추가!!!!  floating 버튼 영역에 가려져서 버튼안눌려져서 우선 left로 해놓음-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right">
+                <Button
+                    android:id="@+id/btn_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+
+                    android:background="@drawable/shape"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape"
+                    />
+                <Button
+                    android:layout_gravity="right"
+                    android:id="@+id/btn_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <!--띄어쓰기-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="재료 확인"
+                android:textColor="@color/gray"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="------------------------------------------------------ "
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="식재료"
+                android:textSize="10dp"
+                android:textColor="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:text="마쉬멜로우 "
+                    android:textSize="16dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:text="초콜릿 "
+                    android:textSize="16dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="비스킷 "
+                    android:textSize="16dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/adopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="요리 시작"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:drawableLeft="@drawable/ic_baseline_restaurant_24"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection="up"
+        app:fab_labelsPosition="left"
+        app:fab_labelStyle="@style/LabelStyle"
+        app:fab_addButtonColorNormal="@color/maincolor"
+        app:fab_addButtonColorPressed="#AD3FC176"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:baselineAlignBottom="false">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="normal"
+            app:fab_title="내정보"
+            app:fab_colorPressed="#AD3FC176"
+            app:fab_icon="@drawable/ic_person"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="normal"
+            app:fab_title="재료선택"
+            app:fab_colorPressed="#AD3FC176"
+            app:fab_icon="@drawable/ic_kitchen"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+    <!--          버튼-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

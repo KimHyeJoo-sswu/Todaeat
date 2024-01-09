@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search"
+        android:title="레시피 검색"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/bookmark"
+        android:title="북마크"
+        android:icon="@drawable/ic_bookmark"
+        app:showAsAction="ifRoom"/>
+
+    <!--setting 버튼 눌렀을 때 하위로 나오는 것들-->
+    <item android:id="@+id/camera"
+        android:title="마이페이지"
+        android:icon="@drawable/ic_camera"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

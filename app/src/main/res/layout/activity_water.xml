@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WaterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#2BCC6F"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="오늘은"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationX="200dp"
+        android:translationY="93dp" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#2BCC6F"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:translationX="200dp"
+        android:translationY="95dp" />
+
+    <TextView
+        android:id="@+id/glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잔의"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationX="230dp"
+        android:translationY="55dp" />
+
+    <TextView
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="물을 마셨습니다!"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationX="200dp"
+        android:translationY="65dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:rotationY="180"
+        android:translationX="-3dp"
+        android:translationY="-100dp"
+        app:srcCompat="@drawable/drinkingwater" />
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="25dp"
+        android:translationY="-25dp">
+
+
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="115dp"
+        android:translationY="-135dp">
+
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage2"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="205dp"
+        android:translationY="-245dp">
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage3"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="295dp"
+        android:translationY="-355dp">
+
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage4"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="25dp"
+        android:translationY="-355dp">
+
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage5"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="115dp"
+        android:translationY="-465dp">
+
+
+        <ImageButton
+            android:id="@+id/btn6"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage6"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="205dp"
+        android:translationY="-575dp">
+
+
+        <ImageButton
+            android:id="@+id/btn7"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage7"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="110dp"
+        android:translationX="295dp"
+        android:translationY="-685dp">
+
+
+        <ImageButton
+            android:id="@+id/btn8"
+            android:layout_width="92dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:onClick="changeImage8"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/empty" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

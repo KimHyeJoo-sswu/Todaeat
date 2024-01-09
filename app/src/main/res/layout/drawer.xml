@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/drawerView"
+    tools:ignore="ExtraText"
+    android:background="#2bcc6f">
+
+    // 네비게이션 메뉴 화면
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="#2BCC6F"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="반갑습니다"
+            android:textSize="20dp"
+            android:textColor="#ffffff">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ㅇㅇㅇ님"
+            android:textSize="25dp"
+            android:textColor="#ffffff">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="투데잇과 함께 활기찬 하루 시작하세요"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#80ffffff">
+            </View>
+
+        <TextView
+            android:id="@+id/nav_ex"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="OnClick1"
+            android:text="튜토리얼"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff">
+        </View>
+
+        <TextView
+            android:id="@+id/nav_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="OnClick2"
+            android:text="회원정보"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff">
+        </View>
+
+
+        <TextView
+            android:id="@+id/nav_s"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="OnClick3"
+            android:text="스크랩"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff">
+        </View>
+
+        <TextView
+            android:id="@+id/nav_cal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="OnClick4"
+            android:text="캘린더"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"></View>
+
+        <TextView
+            android:id="@+id/nav_wat"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="OnClick5"
+            android:text="하루 8잔"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80ffffff"></View>
+
+            <TextView
+                android:id="@+id/nav_yutong"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:onClick="OnClick6"
+                android:text="유통기한 체크"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"></TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#80ffffff"></View>
+            <TextView
+                android:id="@+id/nav_cart"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:onClick="OnClick7"
+                android:text="장보기 메모 확인"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"></TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#80ffffff"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

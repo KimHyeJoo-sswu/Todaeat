@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Todaeat</string>
+    <string name="scrap">스크랩</string>
+    <string name="scrapInfo1">폴더가 없습니다</string>
+    <string name="scrapInfo2">( + 버튼을 눌러 폴더를 만드세요 )</string>
+    <string name="hello">안녕,</string>
+    <string name="username">나의 냉장고</string>
+    <string name="search_elements">Search elements</string>
+    <string name="goals">goals</string>
+    <string name="finance">Finance</string>
+    <string name="health">Health</string>
+    <string name="comfort">Comfort</string>
+    <string name="trending">TRENDING</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="next">다음</string>
+    <string name="skip">건너뛰기</string>
+    <string name="start">시작</string>
+</resources>

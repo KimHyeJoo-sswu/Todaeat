@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sw.todaeat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Todaeat">
+        <activity android:name=".WelcomeActivity"/>
+        <activity android:name=".Memo_MainActivity" />
+        <activity android:name=".WaterActivity"/>
+        <activity android:name=".Yutong_MainActivity"/>
+        <activity android:name=".scrapfolderName"/>
+        <activity android:name=".foodsListViewLayout" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".userinfo" />
+        <activity android:name=".drawer" />
+        <activity
+            android:name=".Fridge"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".ingredient_category_layout" />
+        <activity android:name=".calendar" />
+        <activity android:name=".scrapPage" />
+        <activity android:name=".scrapfoodListActivity" />
+        <activity
+            android:name=".scrapfolderNamePopupActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".scrapfolderListView_layout" />
+        <activity android:name=".scrapfoodListView_layout" />
+        <activity android:name=".Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Categoryfood" />
+        <activity android:name=".MainActivity_china" />
+        <activity android:name=".china_dongpayuuk1" />
+        <activity android:name=".china_jjamppong_ramen1" />
+        <activity android:name=".china_gochu_japchae1" />
+        <activity android:name=".china_egg_bok1" />
+        <activity android:name=".china_baechu_jjajang1" />
+        <activity android:name=".china_baechu_jjajang2" />
+        <activity android:name=".china_Dongpayuuk2" />
+        <activity android:name=".china_jjamppongramen2" />
+        <activity android:name=".china_Gochujapchae2" />
+        <activity android:name=".china_Eggbok2" />
+        <activity
+            android:name=".timer"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".korea_japchae1" />
+        <activity android:name=".korea_raboggi1" />
+        <activity android:name=".korea_denchangestew1" />
+        <activity android:name=".korea_kkacdugi_bokkeumbap1" />
+        <activity android:name=".korea_kimchi_bokkeumbap1" />
+        <activity android:name=".korea_Japchae2" />
+        <activity android:name=".korea_Rabokki2" />
+        <activity android:name=".korea_Denchangstew2" />
+        <activity android:name=".korea_KkakdugiBok2" />
+        <activity android:name=".korea_KimchiBok2" />
+        <activity android:name=".MainActivity_korea" />
+        <activity android:name=".MainActivity_japan" />
+        <activity android:name=".japan_oyakodong1" />
+        <activity android:name=".japan_yaki_udong1" />
+        <activity android:name=".japan_butadong1" />
+        <activity android:name=".japan_okonomiyaki1" />
+        <activity android:name=".japan_butanoshogayaki1" />
+        <activity android:name=".japan_Oyakodong2" />
+        <activity android:name=".japan_yakiUdong2" />
+        <activity android:name=".japan_Butadong2" />
+        <activity android:name=".japan_Okonomiyakki2" />
+        <activity android:name=".japan_Butanoshogayaki2" />
+        <activity android:name=".MainActivity_western" />
+        <activity android:name=".western_Chopsteak2" />
+        <activity android:name=".western_Creamrisotto2" />
+        <activity android:name=".western_Egginhell2" />
+        <activity android:name=".western_Tomatostu2" />
+        <activity android:name=".western_alioolio2" />
+        <activity android:name=".western_chopsteak1" />
+        <activity android:name=".western_cream_risotto_1" />
+        <activity android:name=".western_egg_in_hell1" />
+        <activity android:name=".western_tomato_stew1" />
+        <activity android:name=".western_alioolio1" />
+
+        <activity android:name=".MainActivity_diet"/>
+        <activity android:name=".diet_Pumkinegg2"/>
+        <activity android:name=".diet_curry_bokkeumbap"/>
+        <activity android:name=".diet_chicken_breast_kimbap"/>
+        <activity android:name=".diet_tofu_chunggyungchae1"/>
+        <activity android:name=".diet_oatmeal_maesaengi1"/>
+        <activity android:name=".diet_tuna_kitokimbap1"/>
+        <activity android:name=".diet_chicken_breast_soysauce_bokkeumbap"/>
+        <activity android:name=".diet_pumpkin_eggslut1"/>
+        <activity android:name=".diet_hogibread_sandwich"/>
+        <activity android:name=".diet_paprika_pizza1"/>
+        <activity android:name=".diet_abocado_deopbap1"/>
+        <activity android:name=".diet_Tofu_chunggyungchae2"/>
+        <activity android:name=".diet_PaprikaPizza2"/>
+        <activity android:name=".diet_OatmealMeseng2"/>
+        <activity android:name=".diet_Hogisandwich2"/>
+        <activity android:name=".diet_curry_bok2"/>
+        <activity android:name=".diet_Chickenbreast_kimbap2"/>
+        <activity android:name=".diet_ChickenbreastBok2"/>
+        <activity android:name=".diet_chanchikimbab2"/>
+        <activity android:name=".diet_Abocadobok_diet2"/>
+
+        <activity android:name=".MainActivity_sns"/>
+        <activity android:name=".sns_natures_cereal1"/>
+        <activity android:name=".sns_honey_jelly"/>
+        <activity android:name=".sns_marshmello_smore_dip"/>
+        <activity android:name=".sns_mayak_toast1"/>
+        <activity android:name=".sns_pencake_cereal1"/>
+        <activity android:name=".sns_Sweettoast2"/>
+        <activity android:name=".sns_PencakeCereal2"/>
+        <activity android:name=".sns_Honeyjelly2"/>
+        <activity android:name=".sns_NaturesCereal2"/>
+        <activity android:name=".sns_mashmallow2"/>
+    </application>
+
+</manifest>
